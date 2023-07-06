@@ -1,0 +1,678 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.main-container {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    height: 45px;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    background-color: #454545;
+}
+
+.apple-logo {
+    width: 50px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ccccd3;
+}
+
+.apple-logo i {
+    font-size: 20px;
+}
+
+
+.first-list {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #ccccd3;
+}
+
+.first-list li {
+    list-style: none;
+    font-size: 12px;
+}
+
+.first-list li i {
+    font-size: 16px;
+}
+
+.icons-bar {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    display: none;
+}
+
+.icons-bar span {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* nav */
+
+nav {
+    width: 100%;
+    height: 45px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav p span {
+    color: #0066cc;
+}
+
+.first:hover {
+    border-bottom: 1px solid #0066cc;
+}
+
+/* hero-section */
+
+.hero-section {
+    /* width: 100%; */
+    width: 100vw;
+    height: 600px;
+    background-image: url("./imges/hero_macbook_air_15__x63n8tqcpo2u_large.jpg");
+    background-size: 200% 100%;
+    object-fit: cover;
+    background-position: center;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.text-part {
+    width: 570px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.text-part span {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-part h2 {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 60px;
+}
+
+.text-part h4 {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.text-part span p a {
+    text-decoration: none;
+    color: #0066cc;
+    font-size: 20px;
+}
+
+.text-part p i {
+    color: #0066cc;
+}
+
+.hero-section-2 {
+    width: 100%;
+    height: 600px;
+    background-image: url("./imges/hero_bts2023_startframe__f787lg06y3ue_large.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.text-part p a {
+    text-align: center;
+    text-decoration: none;
+    color: #0066cc;
+    font-size: 20px;
+}
+
+.hero-section-3 {
+    width: 100%;
+    height: 600px;
+    background-image: url("./imges/hero_iphone14pro_spring__9xo85pm6sbmm_large.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.hero-section a:hover {
+    border-bottom: 2px solid #0066cc;
+}
+
+.hero-section-2 a:hover {
+    border-bottom: 2px solid #0066cc;
+}
+
+.hero-section-3 a:hover {
+    border-bottom: 2px solid #0066cc;
+}
+
+
+/* grid container */
+
+.grid-container {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 550px);
+    gap: 13px;
+    padding: 15px;
+}
+
+.img-1 {
+    background-image: url("./imges/promo_iphone14_yellow__fnqrkyt3tz22_large.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.text-section {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text-section h2 {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 45px;
+}
+
+.text-section h5 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.text-section span {
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-section span p a {
+    text-decoration: none;
+    color: #0066cc;
+    line-height: 50px;
+}
+
+.text-section span p i {
+    font-size: 15px;
+    color: #0066cc;
+}
+
+.text-section p i {
+    font-size: 15px;
+    color: #0066cc;
+}
+
+
+.img-2 {
+    background-image: url("./imges/promo_apple_vision_pro__f4v4zp0sum2y_large.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.text-section h6 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #635f5f;
+    margin-top: 10px;
+}
+
+.text-section p a {
+    text-decoration: none;
+    color: #0066cc;
+    line-height: 50px;
+}
+
+.text-section a:hover {
+    border-bottom: 1px solid #0066cc;
+}
+
+.img-3 {
+    background-image: url("./imges/promo_apple_watch_series_8_spring__d9hfvufh7hyu_large.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.img-4 {
+    background-image: url("./imges/promo_ipadpro_refresh__evi9utuixwuq_large.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.inline-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-5 {
+    background-image: url("./imges/iphone_tradein_promo__d5au3rkw5kuq_large.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.img-6 {
+    background-image: url("./imges/tile__cauwwcyyn9hy_large.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.img-7 {
+    background-image: url("./imges/980x551.jpg");
+    grid-column: 1/3;
+}
+
+/* footer */
+
+.footer {
+    width: 100%;
+    height: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5F5F7;
+    flex-direction: column;
+    padding: 0 50px;
+}
+
+.footer-1 {
+    width: 100%;
+    height: 400px;
+    color: #808082;
+    border-bottom: 1px solid #b2b0b0;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.footer-1 p {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.footer-2 {
+    width: 100%;
+    height: 570px;
+    color: #5a5a5c;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.footer-2 li {
+    list-style: none;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.footer-2 h5 {
+    font-size: 15px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #191818;
+}
+
+.footer-3 {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;  
+    color: #808082;
+    font-size: 15px; 
+    border-bottom: 1px solid #b2b0b0;
+}
+
+.footer-3 p span {
+    color: #0066cc;
+}
+
+.last-footer {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.end {
+    width: 30%;
+    font-size: 15px;
+    color: #808082;
+}
+
+.end-2 {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.end-2 ul {
+    width: 65%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.end-2 ul li {
+    list-style: none;
+    padding-right: 8px;
+    border-right: 1px solid #808082;
+    font-size: 15px; 
+}
+
+.end-2 ul li a {
+    text-decoration: none;
+    color: #454545;
+}
+
+.end-2 ul li a:hover {
+    border-bottom: 1px solid #454545;
+}
+
+.end-2 a {
+    text-decoration: none;
+    color: #454545;
+    font-size: 15px;
+}
+
+.end-2 a:hover {
+    border-bottom: 1px solid #454545;
+}
+
+.faq-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+}
+.data {
+    width: 100%;
+    height: 40px;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #a3a3a7ab;;
+}
+
+.data span {
+    width: 100%;
+    color: #454545;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+}
+.data span i {
+    font-size: 15px;
+}
+
+.faq-section {
+    display: none;
+}
+
+
+
+@media (max-width:768px) {
+    .main-container{
+        flex-wrap: wrap;
+    }
+    header {
+        width: 100%;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .first-list {
+        display: none;
+    }
+
+    .icons-bar {
+        display: block;
+    }
+
+    .icons-bar span i {
+        color: #ccccd3;
+    }
+
+    nav {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .hero-section {
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+    }
+
+    .text-part {
+        width: 400px;
+        height: 200px;
+    }
+
+    .text-part h2 {
+        font-size: 40px;
+    }
+
+    .text-part h4 {
+        font-size: 20px;
+    }
+
+    .text-part span p a {
+        font-size: 18px;
+    }
+
+    .text-part p a {
+        font-size: 18px;
+    }
+    
+
+    .hero-section-2 {
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+    }
+
+    .hero-section-3 {
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+    }
+
+    .grid-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .img-1 {
+        width: 100%;
+        height: 400px;
+    }
+
+    .img-2 {
+        width: 100%;
+        height: 400px;
+    }
+
+    .img-3 {
+        width: 100%;
+        height: 400px;
+    }
+
+    .img-4 {
+        width: 100%;
+        height: 400px;
+    }
+
+    .img-5 {
+        width: 100%;
+        height: 400px;
+    }
+
+    .img-6 {
+        width: 100%;
+        height: 400px;
+    }
+
+    .img-7 {
+        width: 100%;
+        height: 400px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .footer {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .footer-1 {
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .footer-2 {
+        display: none;
+    }
+
+    .faq-section {
+        display: block;
+        height: auto;
+    }
+     
+    .footer-3 {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        border-bottom: none;
+        margin-top: 25px;
+    }
+
+    .last-footer {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .end {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .end-2 {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    .end-2 ul {
+        width: 100%;
+        height: auto;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .end-2 ul li {
+        padding-right: 15px;
+    }
+
+   
+
+
+
+    
+
+
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+}
